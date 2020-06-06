@@ -29,4 +29,7 @@ git branch [nome_da_branch] => cria uma nova branch no repositório
  Criar um repositório remoto serve para ter seus arquivos em um servidor e poder recuperá-los sempre que necessário, sem o risco de perder seu projeto
  
  -> git remote add [url_do_repoositorio_remoto] => adiciona o link para o repositório remoto onde os arquivos desse repositório serão compartilhados através do comando git push
- -> git push -u origin master =>
+ -> git push -u origin master => sobe os arquivos para o repositório remoto, setando ao mesmo tempo para que os comandos push,pull e rebase já saibam para qual branch enviar 
+ quando esses comandos são executados sem parâmetros
+ 
+ -> git push sem parâmetros deverá enviar os arquivos 'commitados' para o repositório remoto já na branch definida com git push -u
