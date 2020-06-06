@@ -24,3 +24,9 @@ git branch [nome_da_branch] => cria uma nova branch no repositório
 -> faça pequenos commits (com o mínimo de alterações e arquivos alaterados de uma só vez), sempre com uma mensgaem que mostre o que vc está fazendo/fez naquele commit
 -> se precisar criar uma nova fuincionalidade com potencial de quebrar outras partes da aplicação, crie branches
  
+ Após abrir um repositório remoto no GitHub:
+ 
+ Criar um repositório remoto serve para ter seus arquivos em um servidor e poder recuperá-los sempre que necessário, sem o risco de perder seu projeto
+ 
+ -> git remote add [url_do_repoositorio_remoto] => adiciona o link para o repositório remoto onde os arquivos desse repositório serão compartilhados através do comando git push
+ -> git push -u origin master =>
