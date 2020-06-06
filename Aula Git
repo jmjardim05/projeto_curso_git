@@ -1,0 +1,26 @@
+git init => inicializa o controle de versão no diretório (cria um novo repositório)
+
+git clone => clona, copia um repositório remoto para trabalhar localmente
+
+git add. / git add [nome_do_arquivo] => adiciona arquivos ao reposítório, deixando-os prontos para o commit
+
+git commit -m "msg de commit" +=> salva as alterações no repositório, com uma mensagem
+
+git push => sobe as alterações feitas no repositório local para o repositório remoto (check-in)
+
+git pull => baixa as alterações salvas no repositório remoto para o repositório local (check-out)
+
+git merge => quando há conflito de versões, serve para definir qual versão subir... também serve para unir arquivos em branches distintas apara a branch principal
+
+"branch" => são ramificaçãoes do repositório base, ao criar o repositório é gerado o branch "master" e serve de base para as demais ramificações, 
+use branches quando for necessário trabalhar em uma nova funcionalidade sem alterar o código em produção
+
+git status => traz infomações sobre o estado atual do repositório
+
+git log => traz o histórico de alterações no repositório
+
+git branch [nome_da_branch] => cria uma nova branch no repositório 
+
+-> faça pequenos commits (com o mínimo de alterações e arquivos alaterados de uma só vez), sempre com uma mensgaem que mostre o que vc está fazendo/fez naquele commit
+-> se precisar criar uma nova fuincionalidade com potencial de quebrar outras partes da aplicação, crie branches
+ 
