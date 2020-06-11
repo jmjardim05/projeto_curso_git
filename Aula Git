@@ -48,3 +48,9 @@ git branch [nome_da_branch] => cria uma nova branch no repositório
  git branch -D "nom_da_branch" exclui a branch do projeto
  
  git checkout -b "nome_da_branch" cria a branch e já muda para a branch criada
+ 
+ git checkout -- nome_do_arquivo reseta as alaterações no arquivo
+ 
+ git reset HEAD nome_do_arquivo retira o arquivo da 'fila' do commit (após utilizar o git add)
+ 
+ git commit --amend edita a msg do ultimo commit
