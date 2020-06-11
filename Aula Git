@@ -40,4 +40,11 @@ git branch [nome_da_branch] => cria uma nova branch no repositório
  Branches permitem que diferentes versões de um mesmo conteúdo se desenvolvam ao mesmo tempo, porém de forma independente, enquanto você recombina periodicamente
  as contribuições de diferentes branches em um processo dchamado de fusão (merging)
  
+ O comdo git branch "nom_da_branch" apenas cria a branch mas não muda a referência do origin que continua apontando para a branch padrão (master)
+ Digitando apenas git branch lista todas as branches do projeto
  
+ git checkout "nome_da_branch" troca de branch no projeto
+ 
+ git branch -D "nom_da_branch" exclui a branch do projeto
+ 
+ git checkout -b "nome_da_branch" cria a branch e já muda para a branch criada
