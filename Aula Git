@@ -33,3 +33,11 @@ git branch [nome_da_branch] => cria uma nova branch no repositório
  quando esses comandos são executados sem parâmetros
  
  -> git push sem parâmetros deverá enviar os arquivos 'commitados' para o repositório remoto já na branch definida com git push -u
+ 
+ Branches
+ --------
+ 
+ Branches permitem que diferentes versões de um mesmo conteúdo se desenvolvam ao mesmo tempo, porém de forma independente, enquanto você recombina periodicamente
+ as contribuições de diferentes branches em um processo dchamado de fusão (merging)
+ 
+ 
