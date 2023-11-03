@@ -54,3 +54,29 @@ git branch [nome_da_branch] => cria uma nova branch no repositório
  git reset HEAD nome_do_arquivo retira o arquivo da 'fila' do commit (após utilizar o git add)
  
  git commit --amend edita a msg do ultimo commit
+ 
+ Baixar uma versão antiga (rollback)
+ -----------------------------------
+ 
+ Precisa criar uma nova branch baseado no commit que se quer voltar.
+ 
+ Pra listar os commits de toda a pasta : git log
+ Pra listar os commits que fazem referência a um arquivo específico (IMPORTANTE: parece ser case-sensitive o nome do arquivo): git log --follow "nome_do_arquivo"
+ 
+ exemplo do retorno do comando (na pasta Fincomex Seattle) => git log --follow "ImpoTraM.pas":
+ 
+ commit 66f9069cd1ad53508797e95f07a3c32306909975
+Author: Joao <joao@pglbr.com.br>
+Date:   Fri Jun 2 19:51:12 2023 +0000
+
+ Onde 66f9069cd1ad53508797e95f07a3c32306909975 é o ID do commit e deverá ser utilizado no checkout
+ 
+ Agora que sabemos o ID do commit pra voltar a versão:
+ git checkout -b versao_antiga 66f9069cd1ad53508797e95f07a3c32306909975
+ 
+ Vai criar uma nova branch chamada "versao_antiga" e atualizar seu repositório com os arquivos do commit indicado pelo id 66f9069cd1ad53508797e95f07a3c32306909975
+ 
+ pra voltar para a branch principal (local) basta executar o comando:
+ git checkout master
+ 
+ NOTA: Se o arquivo estiver aberto na IDE (ex: Delphi) vai aparecer o aviso que o arquivo foi modificado por fonte externa e vai solicitar recarregar (reload) o arquivo
