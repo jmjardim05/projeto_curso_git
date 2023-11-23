@@ -4,13 +4,13 @@ git clone => clona, copia um repositório remoto para trabalhar localmente
 
 git add. / git add [nome_do_arquivo] => adiciona arquivos ao reposítório, deixando-os prontos para o commit
 
-git commit -m "msg de commit" +=> salva as alterações no repositório, com uma mensagem
+git commit -m "msg de commit" => salva as alterações no repositório, com uma mensagem
 
 git push => sobe as alterações feitas no repositório local para o repositório remoto (check-in)
 
 git pull => baixa as alterações salvas no repositório remoto para o repositório local (check-out)
 
-git merge => quando há conflito de versões, serve para definir qual versão subir... também serve para unir arquivos em branches distintas apara a branch principal
+git merge => quando há conflito de versões, serve para definir qual versão subir... também serve para unir arquivos em branches distintas para a branch principal
 
 "branch" => são ramificaçãoes do repositório base, ao criar o repositório é gerado o branch "master" e serve de base para as demais ramificações, 
 use branches quando for necessário trabalhar em uma nova funcionalidade sem alterar o código em produção
